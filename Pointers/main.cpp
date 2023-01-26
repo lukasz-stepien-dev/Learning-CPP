@@ -19,9 +19,10 @@ int main()
     *ptr2 = 10;
     LOG(*ptr2);
 
-    // Buffer
+    // Buffer and pointer that point to another pointer
     char* buffer  = new char[8];
     memset(buffer, 0, 8);
-
+    char** ptr3 = &buffer;
+    delete[] buffer;
     return 0;
 }
