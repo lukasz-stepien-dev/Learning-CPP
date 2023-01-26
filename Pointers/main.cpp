@@ -1,4 +1,5 @@
 #include <iostream>
+#include <cstring>
 
 using namespace std;
 
@@ -17,6 +18,10 @@ int main()
     // Changing pointer value
     *ptr2 = 10;
     LOG(*ptr2);
+
+    // Buffer
+    char* buffer  = new char[8];
+    memset(buffer, 0, 8);
 
     return 0;
 }
